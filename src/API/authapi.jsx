@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const api= "http://127.0.0.1:4000/";
+const api= "https://free-chat-backend.vercel.app/";
 
 export const login=async(Email,Password)=>{
     const response=await axios.post(api+"user/login",{Email,Password});
