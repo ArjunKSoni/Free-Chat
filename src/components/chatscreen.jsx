@@ -38,7 +38,7 @@ export default function Chatscreen() {
 
     const connectSocket = () => {
         if (token && !socket) {
-            const newSocket = io('https://free-chat-backend.vercel.app/', {
+            const newSocket = io('https://free-chat-backend.vercel.app', {
                 query: {
                     token: token,
                     user: user,
